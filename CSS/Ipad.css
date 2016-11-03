@@ -1,0 +1,305 @@
+@keyframes rotateMusic{
+    from{
+        -webkit-transform: rotate(0deg);
+        -moz-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+        -moz-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        -o-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+body,div,ul,li,img,input,aside,header,footer{
+    margin: 0;
+    padding: 0;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+li{
+    list-style: none;
+}
+.header-top{
+    width: 100%;
+    height: 80px;
+    background: #4B0082;
+    border-bottom: 5px solid #8B1C62;
+}
+.header-box{
+    width: 80px;
+    height: 80px;
+    background: #4B0082;
+    /*background: #191970;*/
+    color: #ffffff;
+    text-align: center;
+    line-height: 100px;
+}
+.header-push{
+    width: 200px;
+    height: 400px;
+    background: black;
+    position: absolute;
+    top: -400px;
+    left: 80px;
+    -webkit-transition: top 1s;
+    -moz-transition: top 1s;
+    -ms-transition: top 1s;
+    -o-transition: top 1s;
+    transition: top 1s;
+    z-index: 1;
+}
+.header-push-list{
+    width: 50px;
+    height: 80px;
+    background: #4B0082;
+    position: absolute;
+    top: 400px;
+    left: 0;
+    color: #ffffff;
+    text-align: center;
+    line-height: 80px;
+}
+.header-push:hover{
+    top: 0;
+}
+.header-push-list:hover{
+    background: black;
+}
+.header-input{
+    width: 150px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 130px;
+    text-align: center;
+    line-height: 80px;
+}
+.header-input input{
+    background: transparent;
+    border: none;
+    outline: none;
+}
+.header-name{
+    width: 300px;
+    height: 80px;
+    background: #4B0082;
+    position: absolute;
+    top: 0;
+    left: 280px;
+}
+.header-name p{
+    color: #ffffff;
+    line-height: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.header-name-ad{
+    width: 150px;
+    height: 40px;
+    position: absolute;
+    top: 40px;
+    left: 450px;
+}
+.header-name-ad p{
+    color: #ffffff;
+    font-size: 14px;
+}
+/*.header-user{*/
+    /*width: 200px;*/
+    /*height: 400px;*/
+    /*background: #4B0082;*/
+    /*position: absolute;*/
+    /*top: -320px;*/
+    /*right: 0;*/
+    /*-webkit-transition: top 1s;*/
+    /*-moz-transition: top 1s;*/
+    /*-ms-transition: top 1s;*/
+    /*-o-transition: top 1s;*/
+    /*transition: top 1s;*/
+/*}*/
+/*.header-user:hover{*/
+    /*top: 0;*/
+/*}*/
+
+.aside-left{
+    width: 80px;
+    height: 100%;
+    background: #4B0082;
+    position: fixed;
+    top: 85px;
+    bottom: 80px;
+    left: 0;
+}
+.aside-left ul li{
+    width: 160px;
+    height: 50px;
+    color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+    background: #4B0082;
+    position: relative;
+    left: -80px;
+    -webkit-transition: left 0.5s;
+    -moz-transition: left 0.5s;
+    -ms-transition: left 0.5s;
+    -o-transition: left 0.5s;
+    transition: left 0.5s;
+}
+.aside-left li div{
+    width: 80px;
+    height: 50px;
+    float: left;
+}
+.aside-left ul li:hover{
+    left: 0;
+    background: #9400D3;
+}
+.footer-body{
+    width: 100%;
+    height: 80px;
+    background: #4B0082;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+.footer-box{
+    width: 80px;
+    height: 80px;
+    background: -webkit-linear-gradient(#8B0000,#707070);
+    background: -moz-linear-gradient(#8B0000,#707070);
+    background: -ms-linear-gradient(#8B0000,#707070);
+    background: -o-linear-gradient(#8B0000,#707070);
+    background: linear-gradient(#8B0000,#707070);
+    -webkit-border-radius: 40px;
+    -moz-border-radius: 40px;
+    -ms-border-radius: 40px;
+    -o-border-radius: 40px;
+    border-radius: 40px;
+}
+.footer-image{
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 5px;
+    bottom: 5px;
+    left: 5px;
+    background: url("../Img/1.jpg");
+    background-size: 75px 75px;
+    -webkit-animation: rotateMusic 5s;
+    -o-animation: rotateMusic 5s;
+    animation: rotateMusic 5s;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    -ms-border-radius: 35px;
+    -o-border-radius: 35px;
+    border-radius: 35px;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    -o-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    -o-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+}
+.footer-play{
+    width: 240px;
+    height: 80px;
+    position: absolute;
+    left: 80px;
+    top: 0;
+    background: #4B0082;
+}
+.footer-play div{
+    width: 60px;
+    height: 80px;
+    text-align: center;
+    line-height: 80px;
+    color: #ffffff;
+    float: left;
+}
+.footer-bar{
+    width: 350px;
+    height: 10px;
+    position: absolute;
+    left: 350px;
+    top: 35px;
+    border-radius: 5px;
+    background: -webkit-linear-gradient(#68838B,#636363);
+    background: -moz-linear-gradient(#68838B,#636363);
+    background: -ms-linear-gradient(#68838B,#636363);
+    background: -o-linear-gradient(#68838B,#636363);
+    background: linear-gradient(#68838B,#636363);
+}
+
+.section-body{
+    width: 100%;
+    background: #BFBFBF;
+    position: fixed;
+    top: 85px;
+    left: 80px;
+    bottom: 80px;
+    z-index: -1;
+}
+.section-word{
+    width: 100%;
+    height: 40px;
+    background: #6959CD;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
+}
+.section-auto{
+    width: 480px;
+    height: 40px;
+    margin: auto;
+}
+.section-auto ul li{
+    width: 80px;
+    height: 40px;
+    font-size: 16px;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+}
+.section-auto ul li:hover{
+    background: #8A2BE2;
+    cursor: pointer;
+    color: #ffffff;
+}
+.section-tu{
+    width: 100%;
+    height: 200px;
+    background: #87CEFA;
+    position: absolute;
+    top: 40px;
+    left: 0;
+}
+.sectiondiv{
+width: 100%;
+height: 200px;
+position: absolute;
+top: 0;
+left: 0;
+}
+.sectiondiv ul img{
+    width: 450px;
+    height: 200px;
+}
+.section-tu .sectiondiv ul{
+    width: 3150px;
+    height: 200px;
+    position: absolute;
+}
+.section-tu .sectiondiv ul li{
+    float: left;
+}
